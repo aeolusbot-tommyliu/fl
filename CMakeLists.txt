@@ -49,9 +49,10 @@ include(${fl_MODULE_PATH}/definitions.cmake)
 ############################
 # Dependencies            ##
 ############################
-find_package(Eigen REQUIRED)
+# find_package(Eigen REQUIRED)
+set(EIGEN3_INCLUDE_DIR "/opt/eigen3/include/eigen3/")
 include_directories(${Eigen_INCLUDE_DIRS})
-add_definitions(${Eigen_DEFINITIONS})
+# add_definitions(${Eigen_DEFINITIONS})
 
 find_package(Boost REQUIRED)
 include_directories(${Boost_INCLUDE_DIRS})
